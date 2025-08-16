@@ -1,0 +1,316 @@
+/* Particle System Styles */
+
+#particles-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.particle {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0.6;
+    animation: particleFloat 15s linear infinite;
+}
+
+.particle-small {
+    width: 4px;
+    height: 4px;
+    background: var(--accent-color);
+}
+
+.particle-medium {
+    width: 8px;
+    height: 8px;
+    background: var(--accent-secondary);
+}
+
+.particle-large {
+    width: 12px;
+    height: 12px;
+    background: linear-gradient(45deg, var(--accent-color), var(--accent-secondary));
+}
+
+/* Particle Animations */
+@keyframes particleFloat {
+    0% {
+        transform: translateY(100vh) translateX(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.6;
+    }
+    90% {
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateY(-100px) translateX(100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes particlePulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+}
+
+@keyframes particleOrbit {
+    0% {
+        transform: rotate(0deg) translateX(50px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(50px) rotate(-360deg);
+    }
+}
+
+/* Particle Variants */
+.particle-glow {
+    box-shadow: 0 0 10px currentColor;
+    animation: particleFloat 20s linear infinite, particlePulse 3s ease-in-out infinite;
+}
+
+.particle-orbit {
+    animation: particleOrbit 10s linear infinite;
+}
+
+.particle-fade {
+    animation: particleFloat 12s linear infinite, particleFade 4s ease-in-out infinite;
+}
+
+@keyframes particleFade {
+    0%, 100% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+
+/* Interactive Particles */
+.particle-interactive {
+    transition: all 0.3s ease;
+}
+
+.particle-interactive:hover {
+    transform: scale(2);
+    opacity: 1;
+}
+
+/* Particle Trails */
+.particle-trail {
+    position: relative;
+}
+
+.particle-trail::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, currentColor, transparent);
+    transform: translate(-50%, -50%) rotate(45deg);
+    opacity: 0.3;
+}
+
+/* Connection Lines */
+.particle-connection {
+    position: absolute;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+    opacity: 0.2;
+    animation: connectionPulse 3s ease-in-out infinite;
+}
+
+@keyframes connectionPulse {
+    0%, 100% {
+        opacity: 0.1;
+    }
+    50% {
+        opacity: 0.4;
+    }
+}
+
+/* Particle Emitters */
+.particle-emitter {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    box-shadow: 0 0 20px var(--accent-color);
+    animation: emitterPulse 2s ease-in-out infinite;
+}
+
+@keyframes emitterPulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 20px var(--accent-color);
+    }
+    50% {
+        transform: scale(1.2);
+        box-shadow: 0 0 40px var(--accent-color);
+    }
+}
+
+/* Particle Burst Effect */
+.particle-burst {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    animation: burstOut 1s ease-out forwards;
+}
+
+@keyframes burstOut {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+/* Particle Field */
+.particle-field {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, transparent 0%, rgba(59, 130, 246, 0.05) 100%);
+    animation: fieldPulse 8s ease-in-out infinite;
+}
+
+@keyframes fieldPulse {
+    0%, 100% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.6;
+        transform: scale(1.1);
+    }
+}
+
+/* Constellation Effect */
+.constellation {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.constellation-star {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    box-shadow: 0 0 6px var(--accent-color);
+    animation: twinkle 3s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+}
+
+.constellation-line {
+    position: absolute;
+    height: 1px;
+    background: linear-gradient(90deg, var(--accent-color), transparent);
+    opacity: 0.2;
+    animation: constellationPulse 4s ease-in-out infinite;
+}
+
+@keyframes constellationPulse {
+    0%, 100% {
+        opacity: 0.1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+}
+
+/* Particle Performance Optimizations */
+.particle-layer {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+/* Responsive Particle Adjustments */
+@media (max-width: 768px) {
+    .particle {
+        animation-duration: 20s;
+    }
+    
+    .particle-small {
+        width: 3px;
+        height: 3px;
+    }
+    
+    .particle-medium {
+        width: 6px;
+        height: 6px;
+    }
+    
+    .particle-large {
+        width: 9px;
+        height: 9px;
+    }
+}
+
+@media (max-width: 480px) {
+    .particle {
+        animation-duration: 25s;
+    }
+    
+    .particle-glow {
+        box-shadow: 0 0 5px currentColor;
+    }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    .particle,
+    .particle-emitter,
+    .constellation-star {
+        animation: none;
+    }
+    
+    #particles-container {
+        display: none;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .particle {
+        opacity: 1;
+    }
+    
+    .particle-connection,
+    .constellation-line {
+        opacity: 0.5;
+    }
+}

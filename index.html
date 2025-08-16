@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sf File Manager Secure Your Digital Life</title>
+    <meta name="description" content="Sf File Manager provides robust, cross-platform encryption solutions to protect your sensitive files and folders from unauthorized access.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="images/satan.png" type="image/png">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/particles.css">
+</head>
+<body class="page-transition">
+    <!-- Particle Background -->
+    <div id="particles-container"></div>
+    
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <img src="images/satan.png" alt="Satan Encryptor" class="loading-logo">
+            <div class="loading-text">Sf File Manager</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="images/satan.png" alt="Satan Encryptor Logo" class="nav-logo">
+                <span class="nav-title">Sf File Manager</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link active">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="features.html" class="nav-link">
+                    <i class="fas fa-star"></i>
+                    <span>Features</span>
+                </a>
+                <a href="download.html" class="nav-link">
+                    <i class="fas fa-download"></i>
+                    <span>Download</span>
+                </a>
+                <a href="contact.html" class="nav-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon theme-icon"></i>
+                </button>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-background">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text" data-aos="fade-up" data-aos-delay="200">
+                <h2 class="hero-title">
+                    <span class="title-line">Secure Your Digital Life with Sf File Manager</span>
+                </h2>
+                <p class="hero-description" data-aos="fade-up" data-aos-delay="400">
+                    Advanced military-grade encryption technology that protects your most sensitive files and folders from unauthorized access. Experience unbreakable security with elegant simplicity.
+                </p>
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="600">
+                    <a href="download.html" class="btn btn-primary btn-glow">
+                        <i class="fas fa-download"></i>
+                        <span>Download Now</span>
+                        <div class="btn-ripple"></div>
+                    </a>
+                    <a href="features.html" class="btn btn-secondary btn-outline">
+                        <i class="fas fa-play"></i>
+                        <span>Watch Demo</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual" data-aos="fade-left" data-aos-delay="800">
+                <div class="encryption-demo">
+                    <div class="demo-card">
+                        <div class="demo-header">
+                            <div class="demo-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="demo-title">Sf File Manager</div>
+                        </div>
+                        <div class="demo-content">
+                            <div class="file-item">
+                                <i class="fas fa-file-alt"></i>
+                                <span>document.pdf</span>
+                                <div class="encryption-progress">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                            <div class="file-item">
+                                <i class="fas fa-image"></i>
+                                <span>photo.jpg</span>
+                                <div class="encryption-progress">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                            <div class="file-item">
+                                <i class="fas fa-folder"></i>
+                                <span>private_folder</span>
+                                <div class="encryption-progress">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="demo-status">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Files Encrypted Successfully</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="1000">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="stat-number" data-count="256">0</div>
+                    <div class="stat-label">Bit Encryption</div>
+                </div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number" data-count="50">0</div>
+                    <div class="stat-label">Active Users</div>
+                </div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="stat-icon">
+                        <i class="fas fa-file-shield"></i>
+                    </div>
+                    <div class="stat-number" data-count="100">0</div>
+                    <div class="stat-label">Files Protected</div>
+                </div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="stat-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="stat-number" data-count="150">0</div>
+                    <div class="stat-label">Countries</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="why-choose-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Why Choose Sf File Manager?</h2>
+                <p class="section-description">
+                    Experience the perfect blend of security, performance, and user experience
+                </p>
+            </div>
+            
+            <div class="features-showcase">
+                <div class="feature-card" data-aos="fade-right" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Lightning Fast</h3>
+                    <p>Encrypt files in milliseconds with our optimized algorithms</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Military Grade</h3>
+                    <p>AES-256 encryption trusted by governments worldwide</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-left" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>User Friendly</h3>
+                    <p>Intuitive interface that anyone can use effortlessly</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Ready to Secure Your Files?</h2>
+                <p>Join thousands of users who trust Satan Encryptor with their most sensitive data</p>
+                <a href="download.html" class="btn btn-primary btn-large">
+                    <i class="fas fa-download"></i>
+                    <span>Get Started Now</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/satan.png" alt="Satan Encryptor">
+                    <span>Satan Encryptor</span>
+                </div>
+                <div class="footer-links">
+                    <a href="features.html">Features</a>
+                    <a href="download.html">Download</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/Suryabx" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Satan Encryptor. All rights reserved.</p>
+                <p>Designed by <a href="https://github.com/Suryabx" target="_blank">Suryabx, Abishek Raj PR</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

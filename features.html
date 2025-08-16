@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - Sf File Manager</title>
+    <meta name="description" content="Discover the powerful features of Sf File Manager - military-grade encryption, cross-platform compatibility, and more.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="images/satan.png" type="image/png">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/particles.css">
+</head>
+<body class="page-transition">
+    <!-- Particle Background -->
+    <div id="particles-container"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="images/satan.png" alt="Satan Encryptor Logo" class="nav-logo">
+                <span class="nav-title">Sf File Manager</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="features.html" class="nav-link active">
+                    <i class="fas fa-star"></i>
+                    <span>Features</span>
+                </a>
+                <a href="download.html" class="nav-link">
+                    <i class="fas fa-download"></i>
+                    <span>Download</span>
+                </a>
+                <a href="contact.html" class="nav-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon theme-icon"></i>
+                </button>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="header-content" data-aos="fade-up">
+                <h1 class="page-title">Powerful Features</h1>
+                <p class="page-description">
+                    Discover what makes Satan Encryptor the ultimate choice for file security
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="features-section">
+        <div class="container">
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card-large" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-visual">
+                        <div class="encryption-animation">
+                            <div class="data-blocks">
+                                <div class="block"></div>
+                                <div class="block"></div>
+                                <div class="block"></div>
+                                <div class="block"></div>
+                            </div>
+                            <div class="encryption-process">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                            <div class="encrypted-blocks">
+                                <div class="encrypted-block"></div>
+                                <div class="encrypted-block"></div>
+                                <div class="encrypted-block"></div>
+                                <div class="encrypted-block"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Military-Grade Encryption</h3>
+                        <p>Utilizes AES-256-CBC and ChaCha20-Poly1305 algorithms - the same encryption standards used by governments and military organizations worldwide.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> AES-256 bit encryption</li>
+                            <li><i class="fas fa-check"></i> ChaCha20-Poly1305 support</li>
+                            <li><i class="fas fa-check"></i> FIPS 140-2 compliant</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card-large" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <i class="fas fa-folder-open"></i>
+                        </div>
+                        <h3>File & Folder Encryption</h3>
+                        <p>Encrypt individual files or entire directories with a single click. Batch processing capabilities handle thousands of files efficiently.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Drag & drop interface</li>
+                            <li><i class="fas fa-check"></i> Batch processing</li>
+                            <li><i class="fas fa-check"></i> Recursive folder encryption</li>
+                        </ul>
+                    </div>
+                    <div class="feature-visual">
+                        <div class="file-tree">
+                            <div class="folder">
+                                <i class="fas fa-folder"></i>
+                                <span>Documents</span>
+                                <div class="file-items">
+                                    <div class="file-item">
+                                        <i class="fas fa-file-pdf"></i>
+                                        <span>report.pdf</span>
+                                        <div class="lock-icon"><i class="fas fa-lock"></i></div>
+                                    </div>
+                                    <div class="file-item">
+                                        <i class="fas fa-file-word"></i>
+                                        <span>contract.docx</span>
+                                        <div class="lock-icon"><i class="fas fa-lock"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <h3>Advanced Key Management</h3>
+                    <p>Generate, store, and manage encryption keys securely with built-in key derivation functions.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3>Automatic Metadata</h3>
+                    <p>Encryption settings are automatically saved, ensuring consistent decryption across all platforms.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                    <h3>Secure File Shredding</h3>
+                    <p>Permanently overwrite sensitive files using DoD 5220.22-M standards for secure data disposal.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Cross-Platform</h3>
+                    <p>Available on Windows, macOS, and Linux with consistent functionality across all platforms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Standards -->
+    <section class="security-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Security Standards</h2>
+                <p class="section-description">
+                    Built with industry-leading security practices and compliance standards
+                </p>
+            </div>
+            
+            <div class="security-grid">
+                <div class="security-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="security-badge">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h4>FIPS 140-2</h4>
+                    <p>Federal Information Processing Standard</p>
+                </div>
+                
+                <div class="security-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="security-badge">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                    <h4>Zero Knowledge</h4>
+                    <p>We never see your data or passwords</p>
+                </div>
+                
+                <div class="security-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="security-badge">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                    <h4>Open Source</h4>
+                    <p>Transparent and auditable code</p>
+                </div>
+                
+                <div class="security-item" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="security-badge">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <h4>GDPR Compliant</h4>
+                    <p>European data protection standards</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/satan.png" alt="Satan Encryptor">
+                    <span>Satan Encryptor</span>
+                </div>
+                <div class="footer-links">
+                    <a href="features.html">Features</a>
+                    <a href="download.html">Download</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/Suryabx" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Satan Encryptor. All rights reserved.</p>
+                <p>Designed by <a href="https://github.com/Suryabx" target="_blank">Suryabx, Abishek Raj PR</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
