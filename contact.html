@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact SF File Manager - Support & Feedback</title>
-    <meta name="description" content="Get in touch with the SF File Manager team. Technical support, feature requests, bug reports, and general inquiries welcome. We're here to help!">
+    <title>Contact Us - SF File Manager</title>
+    <meta name="description" content="Get in touch with the SF File Manager team for support, feedback, or collaboration opportunities.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -63,7 +63,7 @@
         </div>
     </nav>
 
-    <!-- Enhanced Page Header -->
+    <!-- Page Header -->
     <section class="page-header">
         <div class="header-background">
             <div class="header-shapes">
@@ -75,273 +75,139 @@
         <div class="container">
             <div class="header-content" data-aos="fade-up">
                 <div class="header-badge" data-aos="zoom-in" data-aos-delay="100">
-                    <i class="fas fa-headset"></i>
+                    <i class="fas fa-life-ring"></i>
                     <span>24/7 Support Available</span>
                 </div>
-                <h1 class="page-title">Get In Touch</h1>
+                <h1 class="page-title">Get in Touch</h1>
                 <p class="page-description">
                     Have questions, feedback, or need technical support? We're here to help you make the most of SF File Manager. Our team is committed to providing excellent support and continuously improving our software.
                 </p>
-                <div class="header-stats" data-aos="fade-up" data-aos-delay="300">
-                    <div class="stat">
-                        <span class="stat-number">< 24h</span>
+                <div class="header-stats">
+                    <div class="stat" data-aos="fade-up" data-aos-delay="200">
+                        <span class="stat-number gradient-text">< 24h</span>
                         <span class="stat-label">Response Time</span>
                     </div>
-                    <div class="stat">
-                        <span class="stat-number">99%</span>
+                    <div class="stat" data-aos="fade-up" data-aos-delay="300">
+                        <span class="stat-number gradient-text">99%</span>
                         <span class="stat-label">Satisfaction Rate</span>
                     </div>
-                    <div class="stat">
-                        <span class="stat-number">24/7</span>
+                    <div class="stat" data-aos="fade-up" data-aos-delay="400">
+                        <span class="stat-number gradient-text">24/7</span>
                         <span class="stat-label">Support Available</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Contact Section -->
-    <section class="contact-section" id="contact">
+    
+    <!-- Contact Form & Details -->
+    <section class="contact-section">
         <div class="container">
             <div class="contact-grid">
-                <!-- Enhanced Contact Form -->
+                <!-- Contact Form -->
                 <div class="contact-form-container" data-aos="fade-right">
-                    <div class="form-header">
-                        <div class="form-icon">
-                            <i class="fas fa-paper-plane"></i>
-                        </div>
-                        <h2>Send us a Message</h2>
-                        <p>Fill out the form below and we'll get back to you as soon as possible. All fields marked with * are required.</p>
+                    <div class="section-header text-left">
+                        <h2 class="section-title">Send us a Message</h2>
+                        <p class="section-description">
+                            Fill out the form below and we'll get back to you as soon as possible. All fields marked with * are required.
+                        </p>
                     </div>
-                    
-                    <form class="contact-form" id="contact-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="firstName">First Name *</label>
-                                <input type="text" id="firstName" name="firstName" required>
-                                <div class="form-line"></div>
-                            </div>
-                            <div class="form-group">
-                                <label for="lastName">Last Name *</label>
-                                <input type="text" id="lastName" name="lastName" required>
-                                <div class="form-line"></div>
-                            </div>
-                        </div>
-                        
+                    <form action="#" class="contact-form">
                         <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required>
-                            <div class="form-line"></div>
-                            <div class="form-hint">We'll never share your email with anyone else</div>
+                            <label for="first-name">First Name *</label>
+                            <input type="text" id="first-name" name="first-name" required>
                         </div>
-                        
+                        <div class="form-group">
+                            <label for="last-name">Last Name *</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="text-sm text-secondary">We'll never share your email with anyone else</span>
+                        </div>
                         <div class="form-group">
                             <label for="subject">Subject *</label>
                             <select id="subject" name="subject" required>
-                                <option value="">Select a subject</option>
-                                <option value="technical-support">Technical Support</option>
-                                <option value="bug-report">Bug Report</option>
-                                <option value="feature-request">Feature Request</option>
-                                <option value="installation-help">Installation Help</option>
-                                <option value="security-question">Security Question</option>
-                                <option value="partnership">Partnership Inquiry</option>
-                                <option value="general">General Inquiry</option>
+                                <option>Select subject</option>
+                                <option>Technical Support</option>
+                                <option>Feature Request</option>
+                                <option>General Inquiry</option>
                             </select>
-                            <div class="form-line"></div>
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="priority">Priority Level</label>
-                            <select id="priority" name="priority">
-                                <option value="low">Low - General question</option>
-                                <option value="medium" selected>Medium - Standard inquiry</option>
-                                <option value="high">High - Urgent issue</option>
-                                <option value="critical">Critical - Security concern</option>
-                            </select>
-                            <div class="form-line"></div>
-                        </div>
-                        
                         <div class="form-group">
                             <label for="message">Message *</label>
-                            <textarea id="message" name="message" rows="6" required placeholder="Please provide as much detail as possible..."></textarea>
-                            <div class="form-line"></div>
-                            <div class="character-count">
-                                <span id="char-count">0</span> / 2000 characters
-                            </div>
+                            <textarea id="message" name="message" required></textarea>
+                            <span class="text-xs text-secondary">0 / 2000 characters</span>
                         </div>
-                        
-                        <div class="form-group checkbox-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" id="newsletter" name="newsletter">
-                                <span class="checkmark"></span>
-                                <span class="checkbox-text">Subscribe to our newsletter for updates and security tips</span>
+                        <div class="form-options">
+                            <label class="form-checkbox">
+                                <input type="checkbox">
+                                <span>I agree to receive news and security tips</span>
                             </label>
                         </div>
-                        
-                        <div class="form-group checkbox-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" id="privacy" name="privacy" required>
-                                <span class="checkmark"></span>
-                                <span class="checkbox-text">I agree to the <a href="#privacy-policy">Privacy Policy</a> and <a href="#terms">Terms of Service</a> *</span>
-                            </label>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary btn-large btn-submit">
-                            <span class="btn-text">
-                                <i class="fas fa-paper-plane"></i>
-                                Send Message
-                            </span>
-                            <span class="btn-loading">
-                                <i class="fas fa-spinner fa-spin"></i>
-                                Sending...
-                            </span>
-                            <div class="btn-ripple"></div>
+                        <button type="submit" class="btn btn-primary btn-large w-full mt-4">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Send Message</span>
                         </button>
                     </form>
                 </div>
 
-                <!-- Enhanced Contact Info -->
-                <div class="contact-info" data-aos="fade-left">
-                    <div class="info-header">
-                        <div class="info-icon">
-                            <i class="fas fa-address-card"></i>
-                        </div>
-                        <h2>Contact Information</h2>
-                        <p>Multiple ways to reach our team for support, questions, or collaboration opportunities.</p>
-                    </div>
-                    
-                    <div class="contact-methods">
-                        <a href="mailto:myselfsuryaaz@gmail.com" class="contact-method">
-                            <div class="method-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="method-content">
+                <!-- Contact Details -->
+                <div class="contact-details-container" data-aos="fade-left">
+                    <div class="contact-info-card">
+                        <h3 class="mb-4">Contact Information</h3>
+                        <p class="text-secondary">Multiple ways to reach our team for support, questions, or collaboration opportunities.</p>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
                                 <h4>Email Support</h4>
-                                <p>myselfsuryaaz@gmail.com</p>
-                                <span>Response within 24 hours</span>
-                                <div class="method-status">
-                                    <i class="fas fa-circle online"></i>
-                                    <span>Online</span>
-                                </div>
+                                <a href="mailto:myselfsuryaaz@gmail.com">myselfsuryaaz@gmail.com</a>
+                                <p class="text-secondary">Response within 24 hours</p>
                             </div>
-                        </a>
+                        </div>
                         
-                        <a href="https://github.com/Suryabx" target="_blank" class="contact-method">
-                            <div class="method-icon">
-                                <i class="fab fa-github"></i>
-                            </div>
-                            <div class="method-content">
+                        <div class="info-item">
+                            <i class="fab fa-github"></i>
+                            <div>
                                 <h4>GitHub Repository</h4>
-                                <p>@Suryabx</p>
-                                <span>Open source development</span>
-                                <div class="method-status">
-                                    <i class="fas fa-circle online"></i>
-                                    <span>Active</span>
-                                </div>
+                                <a href="https://github.com/Suryabx" target="_blank">@Suryabx</a>
+                                <p class="text-secondary">Open source development</p>
                             </div>
-                        </a>
+                        </div>
                         
-                        <div class="contact-method">
-                            <div class="method-icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <div class="method-content">
+                        <div class="info-item">
+                            <i class="fas fa-headset"></i>
+                            <div>
                                 <h4>Support Hours</h4>
                                 <p>24/7 Email Support</p>
-                                <span>Always available for urgent issues</span>
-                                <div class="method-status">
-                                    <i class="fas fa-circle online"></i>
-                                    <span>Always On</span>
-                                </div>
+                                <p class="text-secondary">Always available for urgent issues</p>
                             </div>
                         </div>
-                        
-                        <div class="contact-method">
-                            <div class="method-icon">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                            <div class="method-content">
+
+                        <div class="info-item">
+                            <i class="fas fa-bug"></i>
+                            <div>
                                 <h4>Security Issues</h4>
-                                <p>security@sfmanager.com</p>
-                                <span>Confidential security reports</span>
-                                <div class="method-status">
-                                    <i class="fas fa-circle priority"></i>
-                                    <span>Priority</span>
-                                </div>
+                                <a href="mailto:security@sfmanager.com">security@sfmanager.com</a>
+                                <p class="text-secondary">Confidential security reports</p>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="developer-info">
-                        <h3>Meet the Development Team</h3>
-                        <div class="developer-cards">
-                            <div class="developer-card">
-                                <div class="developer-avatar">
-                                    <img src="images/github.png" alt="Suryabx">
-                                    <div class="avatar-status online"></div>
-                                </div>
-                                <div class="developer-details">
-                                    <h4>Suryabx</h4>
-                                    <p>Lead Developer & Security Architect</p>
-                                    <div class="developer-skills">
-                                        <span class="skill">Cryptography</span>
-                                        <span class="skill">Security</span>
-                                        <span class="skill">C++</span>
-                                    </div>
-                                    <div class="developer-social">
-                                        <a href="https://github.com/Suryabx" target="_blank">
-                                            <i class="fab fa-github"></i>
-                                        </a>
-                                    </div>
-                                </div>
+                    <div class="contact-info-card mt-6">
+                        <h3 class="mb-4">Meet the Development Team</h3>
+                        <div class="team-members-grid">
+                            <div class="team-member-card">
+                                <img src="images/github.png" alt="Suryabx">
+                                <h4>Suryabx</h4>
+                                <p>Lead Developer & Security Architect</p>
                             </div>
-                            
-                            <div class="developer-card">
-                                <div class="developer-avatar">
-                                    <img src="images/github.png" alt="Abishek Raj PR">
-                                    <div class="avatar-status online"></div>
-                                </div>
-                                <div class="developer-details">
-                                    <h4>Abishek Raj PR</h4>
-                                    <p>Co-Developer & UI/UX Designer</p>
-                                    <div class="developer-skills">
-                                        <span class="skill">UI/UX</span>
-                                        <span class="skill">Frontend</span>
-                                        <span class="skill">Design</span>
-                                    </div>
-                                    <div class="developer-social">
-                                        <a href="https://github.com/Suryabx" target="_blank">
-                                            <i class="fab fa-github"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="support-stats">
-                        <h3>Support Statistics</h3>
-                        <div class="stats-grid">
-                            <div class="stat-item">
-                                <div class="stat-icon">
-                                    <i class="fas fa-reply"></i>
-                                </div>
-                                <div class="stat-value">< 24h</div>
-                                <div class="stat-label">Avg Response</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-icon">
-                                    <i class="fas fa-smile"></i>
-                                </div>
-                                <div class="stat-value">99%</div>
-                                <div class="stat-label">Satisfaction</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-icon">
-                                    <i class="fas fa-ticket-alt"></i>
-                                </div>
-                                <div class="stat-value">1000+</div>
-                                <div class="stat-label">Tickets Resolved</div>
+                            <div class="team-member-card">
+                                <img src="images/github.png" alt="Abishek Raj PR">
+                                <h4>Abishek Raj PR</h4>
+                                <p>Co-Developer & UI/UX Designer</p>
                             </div>
                         </div>
                     </div>
@@ -350,259 +216,100 @@
         </div>
     </section>
 
-    <!-- Enhanced FAQ Section -->
+    <!-- Support Statistics -->
+    <section class="support-stats-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Support Statistics</h2>
+                <p class="section-description">
+                    Our commitment to exceptional customer service.
+                </p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-icon"><i class="fas fa-clock"></i></div>
+                    <div class="stat-content">
+                        <div class="stat-number">
+                            <span class="gradient-text">< 24h</span>
+                        </div>
+                        <h4 class="stat-label">Avg Response</h4>
+                        <p class="stat-description">Quick and efficient support</p>
+                    </div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-icon"><i class="fas fa-smile"></i></div>
+                    <div class="stat-content">
+                        <div class="stat-number">
+                            <span class="gradient-text">99%</span>
+                        </div>
+                        <h4 class="stat-label">Satisfaction</h4>
+                        <p class="stat-description">Happily resolved cases</p>
+                    </div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-icon"><i class="fas fa-ticket-alt"></i></div>
+                    <div class="stat-content">
+                        <div class="stat-number">
+                            <span class="gradient-text">1000+</span>
+                        </div>
+                        <h4 class="stat-label">Tickets Resolved</h4>
+                        <p class="stat-description">Handled with care</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
     <section class="faq-section" id="faq">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <h2 class="section-title">Frequently Asked Questions</h2>
                 <p class="section-description">
-                    Quick answers to common questions about SF File Manager, security, and support
+                    Quick answers to common questions about SF File Manager, security, and support.
                 </p>
             </div>
-            
-            <div class="faq-categories">
-                <div class="faq-category" data-aos="fade-up" data-aos-delay="100">
-                    <h3>Security & Privacy</h3>
-                    <div class="faq-items">
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h4>Is SF File Manager really secure?</h4>
-                                <i class="fas fa-chevron-down"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Yes, SF File Manager uses military-grade AES-256-CBC and ChaCha20-Poly1305 encryption, the same standards used by governments, banks, and security agencies worldwide. Our implementation is FIPS 140-2 compliant and has been audited by security experts.</p>
-                                <div class="answer-details">
-                                    <div class="detail-item">
-                                        <i class="fas fa-shield-check"></i>
-                                        <span>FIPS 140-2 Level 3 Certified</span>
-                                    </div>
-                                    <div class="detail-item">
-                                        <i class="fas fa-eye-slash"></i>
-                                        <span>Zero-knowledge architecture</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h4>Can I recover my files if I forget the password?</h4>
-                                <i class="fas fa-chevron-down"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p>No, we use zero-knowledge encryption, which means we cannot recover your password or decrypt your files. This is by design to ensure maximum security. We recommend using a secure password manager and creating backup copies of important passwords.</p>
-                                <div class="answer-tips">
-                                    <h5>Password Security Tips:</h5>
-                                    <ul>
-                                        <li>Use a reputable password manager</li>
-                                        <li>Create strong, unique passwords</li>
-                                        <li>Store backup copies securely</li>
-                                        <li>Consider using passphrases</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h4>How does quantum-resistant encryption work?</h4>
-                                <i class="fas fa-chevron-down"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Our quantum-resistant encryption uses post-quantum cryptographic algorithms that are designed to be secure against attacks from quantum computers. These algorithms are based on mathematical problems that even quantum computers cannot solve efficiently.</p>
-                            </div>
-                        </div>
+            <div class="faq-container">
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="accordion-header">
+                        <span>Is SF File Manager really secure?</span>
+                        <i class="fas fa-chevron-down icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Yes, SF File Manager uses advanced cryptographic algorithms like AES-256 and ChaCha20-Poly1305. It's built on a zero-knowledge principle, meaning only you have access to your encryption keys and data. We are committed to using the latest security protocols to ensure your data is safe.</p>
                     </div>
                 </div>
-                
-                <div class="faq-category" data-aos="fade-up" data-aos-delay="200">
-                    <h3>Features & Usage</h3>
-                    <div class="faq-items">
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h4>Is SF File Manager free to use?</h4>
-                                <i class="fas fa-chevron-down"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Yes, SF File Manager is completely free and open source. You can use all features without any limitations, hidden costs, or subscription fees. The source code is available on GitHub for transparency and community contributions.</p>
-                                <div class="answer-benefits">
-                                    <div class="benefit-item">
-                                        <i class="fas fa-check"></i>
-                                        <span>No subscription fees</span>
-                                    </div>
-                                    <div class="benefit-item">
-                                        <i class="fas fa-check"></i>
-                                        <span>No feature limitations</span>
-                                    </div>
-                                    <div class="benefit-item">
-                                        <i class="fas fa-check"></i>
-                                        <span>Open source transparency</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h4>Which operating systems are supported?</h4>
-                                <i class="fas fa-chevron-down"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Currently, we support Windows 10 and 11. macOS and Linux versions are in development and will be released in Q2 2025. All versions will have the same features and cross-platform compatibility.</p>
-                                <div class="platform-status">
-                                    <div class="platform-item available">
-                                        <i class="fab fa-windows"></i>
-                                        <span>Windows - Available Now</span>
-                                    </div>
-                                    <div class="platform-item coming-soon">
-                                        <i class="fab fa-apple"></i>
-                                        <span>macOS - Coming Q2 2025</span>
-                                    </div>
-                                    <div class="platform-item coming-soon">
-                                        <i class="fab fa-linux"></i>
-                                        <span>Linux - Coming Q2 2025</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h4>Can I encrypt entire folders and their subfolders?</h4>
-                                <i class="fas fa-chevron-down"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Yes, SF File Manager supports recursive folder encryption. You can encrypt entire directory structures while preserving the folder hierarchy. The software will process all files and subfolders automatically with progress tracking.</p>
-                            </div>
-                        </div>
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="accordion-header">
+                        <span>Can I recover my files if I forget the password?</span>
+                        <i class="fas fa-chevron-down icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Due to our zero-knowledge policy, we do not store your passwords or encryption keys. This means if you lose your password, we cannot help you recover your files. We strongly recommend using a secure password manager to store your passwords safely.</p>
                     </div>
                 </div>
-                
-                <div class="faq-category" data-aos="fade-up" data-aos-delay="300">
-                    <h3>Technical Support</h3>
-                    <div class="faq-items">
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h4>How do I report a bug or security issue?</h4>
-                                <i class="fas fa-chevron-down"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p>For general bugs, please use our contact form or create an issue on GitHub. For security vulnerabilities, please email us directly at security@sfmanager.com with details. We take security reports seriously and respond quickly.</p>
-                                <div class="reporting-channels">
-                                    <div class="channel-item">
-                                        <i class="fas fa-bug"></i>
-                                        <span>General bugs: Contact form or GitHub</span>
-                                    </div>
-                                    <div class="channel-item">
-                                        <i class="fas fa-shield-alt"></i>
-                                        <span>Security issues: security@sfmanager.com</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h4>What information should I include in a support request?</h4>
-                                <i class="fas fa-chevron-down"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p>To help us assist you quickly, please include:</p>
-                                <ul>
-                                    <li>Your operating system and version</li>
-                                    <li>SF File Manager version number</li>
-                                    <li>Detailed description of the issue</li>
-                                    <li>Steps to reproduce the problem</li>
-                                    <li>Any error messages you received</li>
-                                    <li>Screenshots if applicable</li>
-                                </ul>
-                            </div>
-                        </div>
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="accordion-header">
+                        <span>How does quantum-resistant encryption work?</span>
+                        <i class="fas fa-chevron-down icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Quantum-resistant encryption refers to a new class of cryptographic algorithms designed to be secure against attacks from future quantum computers. While current quantum computers are not yet powerful enough to break existing encryption, our algorithms are a proactive measure to ensure your data is protected for decades to come.</p>
+                    </div>
+                </div>
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="accordion-header">
+                        <span>Is the software free to use?</span>
+                        <i class="fas fa-chevron-down icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Yes, SF File Manager is an open-source project and is completely free to use. There are no hidden fees or premium subscriptions. We believe that everyone should have access to powerful security tools.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Community Section -->
-    <section class="community-section" id="community">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Join Our Community</h2>
-                <p class="section-description">Connect with other users, contribute to development, and stay updated</p>
-            </div>
-            
-            <div class="community-grid">
-                <div class="community-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="community-icon">
-                        <i class="fab fa-github"></i>
-                    </div>
-                    <h3>GitHub Repository</h3>
-                    <p>Contribute to development, report issues, and access the source code</p>
-                    <div class="community-stats">
-                        <div class="stat">
-                            <i class="fas fa-star"></i>
-                            <span>1.2k Stars</span>
-                        </div>
-                        <div class="stat">
-                            <i class="fas fa-code-branch"></i>
-                            <span>156 Forks</span>
-                        </div>
-                    </div>
-                    <a href="https://github.com/Suryabx" target="_blank" class="btn btn-outline">
-                        <i class="fab fa-github"></i>
-                        <span>View Repository</span>
-                    </a>
-                </div>
-                
-                <div class="community-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="community-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <h3>Newsletter</h3>
-                    <p>Stay updated with the latest features, security updates, and tips</p>
-                    <div class="community-stats">
-                        <div class="stat">
-                            <i class="fas fa-users"></i>
-                            <span>5k+ Subscribers</span>
-                        </div>
-                        <div class="stat">
-                            <i class="fas fa-calendar"></i>
-                            <span>Monthly Updates</span>
-                        </div>
-                    </div>
-                    <div class="newsletter-form">
-                        <input type="email" placeholder="Enter your email" class="newsletter-input">
-                        <button class="btn btn-primary">Subscribe</button>
-                    </div>
-                </div>
-                
-                <div class="community-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="community-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h3>Support Development</h3>
-                    <p>Help us continue developing and improving SF File Manager</p>
-                    <div class="community-stats">
-                        <div class="stat">
-                            <i class="fas fa-coffee"></i>
-                            <span>Buy us coffee</span>
-                        </div>
-                        <div class="stat">
-                            <i class="fas fa-code"></i>
-                            <span>Contribute code</span>
-                        </div>
-                    </div>
-                    <div class="support-options">
-                        <a href="#" class="btn btn-outline">
-                            <i class="fas fa-heart"></i>
-                            <span>Sponsor</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -683,7 +390,24 @@
     <script src="js/animations.js"></script>
     <script src="js/theme.js"></script>
     <script src="js/navigation.js"></script>
-    <script src="js/contact.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+    <script>
+        // FAQ Accordion functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    const content = header.nextElementSibling;
+                    const icon = header.querySelector('.icon');
+
+                    // Toggle the 'active' class on the header and content
+                    header.classList.toggle('active');
+                    content.classList.toggle('active');
+                });
+            });
+        });
+    </script>
 </body>
 </html>

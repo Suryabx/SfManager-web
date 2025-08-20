@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SF File Manager - Ultimate File Encryption & Security Suite</title>
-    <meta name="description" content="SF File Manager provides military-grade encryption, secure file management, and advanced privacy protection. Protect your digital life with AES-256, ChaCha20-Poly1305, and quantum-resistant algorithms.">
-    <meta name="keywords" content="file encryption, data security, privacy protection, AES-256, ChaCha20, file manager, secure storage">
+    <title>SF File Manager - Ultimate Security Suite</title>
+    <meta name="description" content="SF File Manager provides a powerful and secure way to manage your files with advanced encryption, privacy features, and an intuitive interface.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -15,29 +14,23 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/animations.css">
     <link rel="stylesheet" href="styles/particles.css">
+    <style>
+        .hero-visual .placeholder-image {
+            border-radius: 1.5rem;
+            box-shadow: 0 20px 60px var(--shadow);
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease-in-out;
+        }
+        .hero-visual .placeholder-image:hover {
+            transform: translateY(-5px);
+        }
+    </style>
 </head>
 <body class="page-transition">
-    <!-- Advanced Particle Background -->
+    <!-- Particle Background -->
     <div id="particles-container"></div>
-    
-    <!-- Enhanced Loading Screen -->
-    <div id="loading-screen" class="loading-screen">
-        <div class="loading-content">
-            <div class="loading-logo-container">
-                <img src="images/satan.png" alt="SF File Manager" class="loading-logo">
-                <div class="loading-pulse"></div>
-            </div>
-            <div class="loading-text" data-typewriter="SF File Manager">SF File Manager</div>
-            <div class="loading-subtitle">Initializing Security Protocols...</div>
-            <div class="loading-bar">
-                <div class="loading-progress"></div>
-                <div class="loading-glow"></div>
-            </div>
-            <div class="loading-percentage">0%</div>
-        </div>
-    </div>
 
-    <!-- Enhanced Navigation -->
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-brand">
@@ -81,379 +74,63 @@
         </div>
     </nav>
 
-    <!-- Hero Section with Advanced Animations -->
-    <section class="hero-section" id="home">
+    <!-- Hero Section -->
+    <section class="hero-section">
         <div class="hero-background">
             <div class="hero-shapes">
-                <div class="shape shape-1" data-parallax="0.1"></div>
-                <div class="shape shape-2" data-parallax="0.2"></div>
-                <div class="shape shape-3" data-parallax="0.15"></div>
-                <div class="shape shape-4" data-parallax="0.25"></div>
-                <div class="shape shape-5" data-parallax="0.3"></div>
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
             </div>
             <div class="hero-grid"></div>
         </div>
-        
         <div class="container">
             <div class="hero-content">
-                <div class="hero-text" data-aos="fade-up" data-aos-delay="200">
+                <div class="hero-text" data-aos="fade-right">
                     <div class="hero-badge" data-aos="zoom-in" data-aos-delay="100">
                         <i class="fas fa-shield-alt"></i>
-                        <span>Military-Grade Security</span>
+                        <span>Secure Your Digital Life</span>
                     </div>
                     <h1 class="hero-title">
-                        <span class="title-line gradient-text" data-aos="fade-right" data-aos-delay="300">Secure Your Digital Life</span>
-                        <span class="title-line" data-aos="fade-right" data-aos-delay="400">with <span class="highlight">SF File Manager</span></span>
+                        <span class="title-line">SF File Manager:</span>
+                        <span class="title-line gradient-text">Beyond Standard File Management</span>
                     </h1>
-                    <p class="hero-description" data-aos="fade-up" data-aos-delay="500">
-                        Experience the ultimate in file security with our advanced encryption suite. Featuring AES-256-CBC, ChaCha20-Poly1305, and quantum-resistant algorithms, SF File Manager protects your most sensitive data with unbreakable military-grade encryption that even governments trust.
+                    <p class="hero-description">
+                        SF File Manager is the ultimate tool for securing your files. With advanced quantum-resistant encryption and a user-friendly interface, you can manage, protect, and share your data with confidence.
                     </p>
-                    
-                    <div class="hero-features" data-aos="fade-up" data-aos-delay="600">
-                        <div class="hero-feature stagger-child">
-                            <i class="fas fa-bolt"></i>
-                            <span>Lightning Fast Encryption</span>
+                    <div class="hero-features">
+                        <div class="hero-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Quantum-resistant Encryption</span>
                         </div>
-                        <div class="hero-feature stagger-child">
-                            <i class="fas fa-shield-virus"></i>
-                            <span>Zero-Knowledge Architecture</span>
+                        <div class="hero-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Intuitive Interface</span>
                         </div>
-                        <div class="hero-feature stagger-child">
-                            <i class="fas fa-globe"></i>
-                            <span>Cross-Platform Compatible</span>
+                        <div class="hero-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Multi-platform Support</span>
                         </div>
                     </div>
-                    
-                    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="700">
-                        <a href="download.html" class="btn btn-primary btn-large btn-glow">
+                    <div class="hero-buttons">
+                        <a href="download.html" class="btn btn-primary btn-large" data-aos="fade-up" data-aos-delay="200">
                             <i class="fas fa-download"></i>
-                            <span>Download Free</span>
+                            <span>Download Now</span>
                             <div class="btn-ripple"></div>
                         </a>
-                        <a href="features.html" class="btn btn-secondary btn-outline btn-large">
-                            <i class="fas fa-play"></i>
-                            <span>Watch Demo</span>
+                        <a href="features.html" class="btn btn-outline btn-large" data-aos="fade-up" data-aos-delay="300">
+                            <i class="fas fa-star"></i>
+                            <span>Learn More</span>
                             <div class="btn-ripple"></div>
                         </a>
                     </div>
-                    
-                    <div class="hero-stats" data-aos="fade-up" data-aos-delay="800">
-                        <div class="stat-item">
-                            <div class="stat-number" data-count="5">0</div>
-                            <div class="stat-label">Active Users</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number" data-count="100">0</div>
-                            <div class="stat-label">Files Protected</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number" data-count="99">0</div>
-                            <div class="stat-label">% Secure</div>
-                        </div>
-                    </div>
                 </div>
-                
-                <div class="hero-visual" data-aos="fade-left" data-aos-delay="600">
-                    <div class="encryption-demo">
-                        <div class="demo-card">
-                            <div class="demo-header">
-                                <div class="demo-dots">
-                                    <span class="dot red"></span>
-                                    <span class="dot yellow"></span>
-                                    <span class="dot green"></span>
-                                </div>
-                                <div class="demo-title">SF File Manager v2.5.1.2</div>
-                                <div class="demo-status">
-                                    <i class="fas fa-shield-alt"></i>
-                                    <span>Secure Mode</span>
-                                </div>
-                            </div>
-                            
-                            <div class="demo-content">
-                                <div class="encryption-method">
-                                    <label>Encryption Algorithm:</label>
-                                    <select class="demo-select">
-                                        <option>AES-256-CBC</option>
-                                        <option>ChaCha20-Poly1305</option>
-                                        <option>Quantum-Resistant</option>
-                                    </select>
-                                </div>
-                                
-                                <div class="file-list">
-                                    <div class="file-item" data-animate-delay="0">
-                                        <div class="file-icon">
-                                            <i class="fas fa-file-pdf"></i>
-                                        </div>
-                                        <div class="file-info">
-                                            <span class="file-name">confidential_report.pdf</span>
-                                            <span class="file-size">2.4 MB</span>
-                                        </div>
-                                        <div class="encryption-progress">
-                                            <div class="progress-bar" data-progress="100"></div>
-                                        </div>
-                                        <div class="file-status encrypted">
-                                            <i class="fas fa-lock"></i>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="file-item" data-animate-delay="500">
-                                        <div class="file-icon">
-                                            <i class="fas fa-image"></i>
-                                        </div>
-                                        <div class="file-info">
-                                            <span class="file-name">personal_photos.zip</span>
-                                            <span class="file-size">15.7 MB</span>
-                                        </div>
-                                        <div class="encryption-progress">
-                                            <div class="progress-bar" data-progress="75"></div>
-                                        </div>
-                                        <div class="file-status encrypting">
-                                            <i class="fas fa-spinner fa-spin"></i>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="file-item" data-animate-delay="1000">
-                                        <div class="file-icon">
-                                            <i class="fas fa-folder"></i>
-                                        </div>
-                                        <div class="file-info">
-                                            <span class="file-name">financial_documents/</span>
-                                            <span class="file-size">47 files</span>
-                                        </div>
-                                        <div class="encryption-progress">
-                                            <div class="progress-bar" data-progress="30"></div>
-                                        </div>
-                                        <div class="file-status pending">
-                                            <i class="fas fa-clock"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="demo-footer">
-                                    <div class="encryption-info">
-                                        <div class="info-item">
-                                            <i class="fas fa-key"></i>
-                                            <span>256-bit Key</span>
-                                        </div>
-                                        <div class="info-item">
-                                            <i class="fas fa-clock"></i>
-                                            <span>Real-time</span>
-                                        </div>
-                                        <div class="info-item">
-                                            <i class="fas fa-shield-check"></i>
-                                            <span>FIPS Compliant</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="1000">
-            <div class="scroll-mouse">
-                <div class="scroll-wheel"></div>
-            </div>
-            <span>Discover More</span>
         </div>
     </section>
 
-    <!-- Enhanced Why Choose Section -->
-    <section class="why-choose-section" id="why-choose">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Why Choose SF File Manager?</h2>
-                <p class="section-description">
-                    Experience the perfect blend of security, performance, and user experience
-                </p>
-            </div>
-            
-            <div class="features-showcase">
-                <div class="feature-card premium" data-aos="fade-up" data-aos-delay="100">
-                    <div class="feature-icon">
-                        <i class="fas fa-bolt"></i>
-                        <div class="icon-glow"></div>
-                    </div>
-                    <h3>Lightning Fast Performance</h3>
-                    <p>Encrypt files in milliseconds with our optimized algorithms. Multi-threaded processing ensures maximum speed without compromising security.</p>
-                    <div class="feature-metrics">
-                        <div class="metric">
-                            <span class="metric-value">10x</span>
-                            <span class="metric-label">Faster</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">99.9%</span>
-                            <span class="metric-label">Uptime</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="feature-card premium" data-aos="fade-up" data-aos-delay="200">
-                    <div class="feature-icon">
-                        <i class="fas fa-lock"></i>
-                        <div class="icon-glow"></div>
-                    </div>
-                    <h3>Military-Grade Security</h3>
-                    <p>AES-256-CBC and ChaCha20-Poly1305 encryption trusted by governments, banks, and security agencies worldwide.</p>
-                    <div class="feature-metrics">
-                        <div class="metric">
-                            <span class="metric-value">256</span>
-                            <span class="metric-label">Bit Key</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">FIPS</span>
-                            <span class="metric-label">Certified</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="feature-card premium" data-aos="fade-up" data-aos-delay="300">
-                    <div class="feature-icon">
-                        <i class="fas fa-heart"></i>
-                        <div class="icon-glow"></div>
-                    </div>
-                    <h3>Intuitive User Experience</h3>
-                    <p>Beautiful, intuitive interface that anyone can use effortlessly. Drag-and-drop functionality with real-time progress tracking.</p>
-                    <div class="feature-metrics">
-                        <div class="metric">
-                            <span class="metric-value">5★</span>
-                            <span class="metric-label">Rating</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">24/7</span>
-                            <span class="metric-label">Support</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Technology Stack Section -->
-    <section class="technology-section" id="technology">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Advanced Technology Stack</h2>
-                <p class="section-description">Built with cutting-edge cryptographic algorithms and security protocols</p>
-            </div>
-            
-            <div class="tech-grid">
-                <div class="tech-category" data-aos="fade-right" data-aos-delay="100">
-                    <h3>Encryption Algorithms</h3>
-                    <div class="tech-items">
-                        <div class="tech-item">
-                            <div class="tech-icon">
-                                <i class="fas fa-key"></i>
-                            </div>
-                            <div class="tech-info">
-                                <h4>AES-256-CBC</h4>
-                                <p>Advanced Encryption Standard with 256-bit keys in Cipher Block Chaining mode</p>
-                            </div>
-                        </div>
-                        <div class="tech-item">
-                            <div class="tech-icon">
-                                <i class="fas fa-shield-virus"></i>
-                            </div>
-                            <div class="tech-info">
-                                <h4>ChaCha20-Poly1305</h4>
-                                <p>Modern authenticated encryption with associated data (AEAD) cipher</p>
-                            </div>
-                        </div>
-                        <div class="tech-item">
-                            <div class="tech-icon">
-                                <i class="fas fa-atom"></i>
-                            </div>
-                            <div class="tech-info">
-                                <h4>Quantum-Resistant</h4>
-                                <p>Post-quantum cryptography algorithms for future-proof security</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="tech-category" data-aos="fade-left" data-aos-delay="200">
-                    <h3>Security Features</h3>
-                    <div class="tech-items">
-                        <div class="tech-item">
-                            <div class="tech-icon">
-                                <i class="fas fa-random"></i>
-                            </div>
-                            <div class="tech-info">
-                                <h4>PBKDF2 Key Derivation</h4>
-                                <p>Password-Based Key Derivation Function with configurable iterations</p>
-                            </div>
-                        </div>
-                        <div class="tech-item">
-                            <div class="tech-icon">
-                                <i class="fas fa-fingerprint"></i>
-                            </div>
-                            <div class="tech-info">
-                                <h4>HMAC Authentication</h4>
-                                <p>Hash-based Message Authentication Code for integrity verification</p>
-                            </div>
-                        </div>
-                        <div class="tech-item">
-                            <div class="tech-icon">
-                                <i class="fas fa-trash-alt"></i>
-                            </div>
-                            <div class="tech-info">
-                                <h4>Secure Deletion</h4>
-                                <p>DoD 5220.22-M compliant secure file shredding and overwriting</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Enhanced CTA Section -->
-    <section class="cta-section" id="cta">
-        <div class="cta-background">
-            <div class="cta-particles"></div>
-        </div>
-        <div class="container">
-            <div class="cta-content" data-aos="zoom-in">
-                <div class="cta-icon">
-                    <i class="fas fa-shield-alt"></i>
-                </div>
-                <h2>Ready to Secure Your Digital Life?</h2>
-                <p>Join thousands of users who trust SF File Manager with their most sensitive data. Download now and experience military-grade security with elegant simplicity.</p>
-                
-                <div class="cta-features">
-                    <div class="cta-feature">
-                        <i class="fas fa-check"></i>
-                        <span>100% Free & Open Source</span>
-                    </div>
-                    <div class="cta-feature">
-                        <i class="fas fa-check"></i>
-                        <span>No Registration Required</span>
-                    </div>
-                    <div class="cta-feature">
-                        <i class="fas fa-check"></i>
-                        <span>Cross-Platform Support</span>
-                    </div>
-                </div>
-                
-                <div class="cta-buttons">
-                    <a href="download.html" class="btn btn-primary btn-large btn-glow">
-                        <i class="fas fa-download"></i>
-                        <span>Download Now</span>
-                        <div class="btn-ripple"></div>
-                    </a>
-                    <a href="features.html" class="btn btn-secondary btn-outline btn-large">
-                        <i class="fas fa-info-circle"></i>
-                        <span>Learn More</span>
-                        <div class="btn-ripple"></div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Enhanced Footer -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -520,7 +197,7 @@
         </div>
     </footer>
 
-    <!-- Enhanced Back to Top -->
+    <!-- Back to Top -->
     <button id="back-to-top" class="back-to-top">
         <i class="fas fa-arrow-up"></i>
         <div class="btn-glow"></div>
