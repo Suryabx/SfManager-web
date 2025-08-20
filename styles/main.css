@@ -6,7 +6,7 @@
     /* Light Theme Colors */
     --primary-bg-light: #ffffff;
     --secondary-bg-light: #f8fafc;
-    --card-bg-light: rgba(255, 255, 255, 0.5);
+    --card-bg-light: #ffffff; /* Updated: Changed to a solid white */
     --text-color-light: #1e293b;
     --text-secondary-light: #64748b;
     --accent-color-light: #3b82f6;
@@ -268,7 +268,7 @@ p {
     right: 0;
     z-index: var(--z-fixed);
     background: var(--card-bg);
-    backdrop-filter: blur(20px);
+    /* backdrop-filter: blur(20px); -- Removed for solid color */
     border-bottom: 1px solid var(--border-color);
     transition: all var(--transition-normal);
     /* New style for the curved header */
@@ -2546,3 +2546,4 @@ p {
         padding: 2rem 0;
     }
 }
+
