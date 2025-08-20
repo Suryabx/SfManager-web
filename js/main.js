@@ -273,8 +273,158 @@ class App {
         
         // Initialize progress bars
         this.initProgressBars();
+        
+        // Initialize magic effects
+        this.initMagicEffects();
     }
 
+    initMagicEffects() {
+        // Add magic sparkles on hover
+        const magicElements = document.querySelectorAll('.btn, .feature-card, .stat-card');
+        
+        magicElements.forEach(element => {
+            element.addEventListener('mouseenter', (e) => {
+                this.createMagicSparkles(e.target);
+            });
+        });
+        
+        // Add floating magic orbs
+        this.createFloatingOrbs();
+        
+        // Add magic cursor trail
+        this.initMagicCursor();
+    }
+
+    createMagicSparkles(element) {
+        const rect = element.getBoundingClientRect();
+        const sparkleCount = 8;
+        
+        for (let i = 0; i < sparkleCount; i++) {
+            const sparkle = document.createElement('div');
+            sparkle.className = 'magic-sparkle';
+            sparkle.style.cssText = `
+                position: fixed;
+                width: 4px;
+                height: 4px;
+                background: linear-gradient(45deg, #a78bfa, #60a5fa);
+                border-radius: 50%;
+                pointer-events: none;
+                z-index: 9999;
+                left: ${rect.left + Math.random() * rect.width}px;
+                top: ${rect.top + Math.random() * rect.height}px;
+                box-shadow: 0 0 10px currentColor;
+            `;
+            
+            document.body.appendChild(sparkle);
+            
+            // Animate sparkle
+            const angle = (Math.PI * 2 * i) / sparkleCount;
+            const distance = 50 + Math.random() * 30;
+            let life = 30;
+            
+            const animate = () => {
+                life--;
+                const progress = life / 30;
+                
+                sparkle.style.transform = `
+                    translate(${Math.cos(angle) * distance * (1 - progress)}px, 
+                             ${Math.sin(angle) * distance * (1 - progress)}px)
+                    scale(${progress})
+                `;
+                sparkle.style.opacity = progress;
+                
+                if (life > 0) {
+                    requestAnimationFrame(animate);
+                } else {
+                    sparkle.remove();
+                }
+            };
+            
+            animate();
+        }
+    }
+
+    createFloatingOrbs() {
+        const orbCount = 5;
+        
+        for (let i = 0; i < orbCount; i++) {
+            const orb = document.createElement('div');
+            orb.className = 'floating-orb';
+            orb.style.cssText = `
+                position: fixed;
+                width: ${20 + Math.random() * 30}px;
+                height: ${20 + Math.random() * 30}px;
+                background: radial-gradient(circle, rgba(139, 92, 246, 0.3), transparent);
+                border-radius: 50%;
+                pointer-events: none;
+                z-index: -1;
+                left: ${Math.random() * window.innerWidth}px;
+                top: ${Math.random() * window.innerHeight}px;
+                animation: floatOrb ${10 + Math.random() * 10}s ease-in-out infinite;
+                animation-delay: ${Math.random() * 5}s;
+            `;
+            
+            document.body.appendChild(orb);
+        }
+    }
+
+    initMagicCursor() {
+        const cursor = document.createElement('div');
+        cursor.className = 'magic-cursor';
+        cursor.style.cssText = `
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            background: radial-gradient(circle, rgba(139, 92, 246, 0.5), transparent);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9998;
+            mix-blend-mode: screen;
+            transition: transform 0.1s ease;
+        `;
+        
+        document.body.appendChild(cursor);
+        
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = (e.clientX - 10) + 'px';
+            cursor.style.top = (e.clientY - 10) + 'px';
+        });
+        
+        // Create cursor trail
+        let trail = [];
+        document.addEventListener('mousemove', (e) => {
+            trail.push({ x: e.clientX, y: e.clientY, life: 20 });
+            
+            if (trail.length > 10) {
+                trail.shift();
+            }
+            
+            trail.forEach((point, index) => {
+                if (point.life > 0) {
+                    const trailDot = document.createElement('div');
+                    trailDot.style.cssText = `
+                        position: fixed;
+                        width: 3px;
+                        height: 3px;
+                        background: rgba(139, 92, 246, ${point.life / 20});
+                        border-radius: 50%;
+                        pointer-events: none;
+                        z-index: 9997;
+                        left: ${point.x}px;
+                        top: ${point.y}px;
+                    `;
+                    
+                    document.body.appendChild(trailDot);
+                    
+                    setTimeout(() => {
+                        trailDot.remove();
+                    }, 200);
+                    
+                    point.life--;
+                }
+            });
+        });
+    }
     initTypewriter() {
         const typewriterElements = document.querySelectorAll('[data-typewriter]');
         
